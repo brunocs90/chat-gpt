@@ -50,15 +50,18 @@ Necessário o preenchimento de variáveis de ambientes do projeto no arquivo .en
 
 ```bash
 NEXTAUTH_URL=
+NEXTAUTH_SECRET=
 GOOGLE_ID=
 GOOGLE_SECRET=
 OPENAI_API_KEY=
 FIREBASE_SERVICE_ACCOUNT_KEY={...}
 ```
-A variável `FIREBASE_SERVICE_ACCOUNT_KEY={...}`, pode ser preenchida indo em:  Configurações do projeto -> Contas de serviço -> Gerar nova chave. 
+
+A variável `FIREBASE_SERVICE_ACCOUNT_KEY={...}`, pode ser preenchida indo em: Configurações do projeto -> Contas de serviço -> Gerar nova chave.
 Em seguida é necessário remover as quebras de linhas do arquivo gerado (https://www.textfixer.com/tools/remove-line-breaks.php)
 
 As demais variáveis abaixo podem ser encontradas dentro do próprio Firebase indo nas opções configurações do projeto:
+
 ```bash
 NEXT_PUBLIC_FIREBASE_API_KEY=
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
