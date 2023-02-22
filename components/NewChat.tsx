@@ -19,9 +19,9 @@ function NewChat() {
         router.push(`/chat/${doc.id}`);
     };
     return (
-        <div onClick={createNewChat} className="border-gray-700 border chatRow ">
-            <PlusIcon className="h-4 w-4" />
-            <p>New Chat</p>
+        <div onClick={createNewChat} className="border-gray-700 border chatRowMobile sm:chatRow">
+            <PlusIcon className="h-4 w-4 text-white" />
+            <p className="flex-1 hidden md:inline-flex truncate">New Chat</p>
         </div>
     );
 }
