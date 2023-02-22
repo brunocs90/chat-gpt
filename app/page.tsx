@@ -2,8 +2,8 @@ import { BoltIcon, ExclamationTriangleIcon, SunIcon } from '@heroicons/react/24/
 
 function Homepage() {
     return (
-        <div className=" flex flex-col items-center justify-center h-screen px-2 text-white">
-            <h1 className="text-5xl font-bold mb-20">ChatGPT</h1>
+        <div className="flex flex-col items-center justify-center h-screen px-2 text-white">
+            <h1 className="text-3xl font-bold mb-20 sm:text-5xl">ChatGPT</h1>
 
             <div className="flex space-x-2 text-center">
                 <div>
@@ -14,13 +14,13 @@ function Homepage() {
                     </div>
 
                     <div className="space-y-2">
-                        <p className="infoText">"Explain Something to me"</p>
-                        <p className="infoText">"What is the difference between a dog and a cat?"</p>
-                        <p className="infoText">"What is the color of the sun?"</p>
+                        <p className="infoTextMobile sm:infoText">"Explain Something to me"</p>
+                        <p className="infoTextMobile sm:infoText">"What is the difference between a dog and a cat?"</p>
+                        <p className="infoTextMobile sm:infoText">"What is the color of the sun?"</p>
                     </div>
                 </div>
 
-                <div>
+                <div className="hidden sm:block">
                     <div className="flex flex-col items-center justify-center mb-5">
                         {/* Bolt icon */}
                         <BoltIcon className="h-8 w-8 " />
@@ -34,8 +34,8 @@ function Homepage() {
                     </div>
                 </div>
 
-                <div>
-                    <div className="flex flex-col items-center justify-center mb-5">
+                <div className="hidden sm:block">
+                    <div className="hidden sm:flex flex-col items-center justify-center mb-5">
                         {/* Exclamation triangle icon */}
                         <ExclamationTriangleIcon className="h-8 w-8 " />
                         <h2>Limitations</h2>
